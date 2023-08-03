@@ -19,3 +19,8 @@ curl -s "https://get.sdkman.io" | bash
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+4. Install the software listed in Brewfile
+```zsh
+brew bundle --file ~/your_path/.dotfiles/Brewfile 
+```
