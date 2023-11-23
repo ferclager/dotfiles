@@ -27,7 +27,6 @@ brew bundle --file ~/your_path/.dotfiles/Brewfile
 
 5. Update git configuration
 ```zsh
-git config --global core.pager diff-sofancy | less --tabs=4 -RFX
 git config --global color.ui true
 git config --global color.diff-hifhlight.oldnormal red bold
 git config --global color.diff-hifhlight.newnormal green bold
