@@ -1,4 +1,4 @@
-# frclager dotfiles
+# ferclager dotfiles
 
 ## Steps to bootstrap a new Mac
 
@@ -25,7 +25,20 @@ curl -s "https://get.sdkman.io" | bash
 brew bundle --file ~/your_path/.dotfiles/Brewfile 
 ```
 
-5. Update git configuration
+5.1. Configure git with your own information, and generate the SSH key
+```zsh
+git config --global color.ui true
+git config --global user.name "YOUR NAME"
+git config --global user.email YOUR@EMAIL.com
+ssh-keygen -t rsa -C YOUR@EMAIL.com
+```
+
+5.2. You have to copy and paste the output of the following command and paste it [here](https://github.com/settings/ssh).
+```zsh
+cat ~/.ssh/id_rsa.pub
+```
+
+5.3. Update git configuration
 ```zsh
 git config --global color.ui true
 git config --global color.diff-hifhlight.oldnormal red bold
